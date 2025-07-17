@@ -1,0 +1,25 @@
+.{
+    .name = .libchdr,
+    .version = "0.0.0",
+    .fingerprint = 0xcdbeff9682105928,
+    .minimum_zig_version = "0.14.0",
+    .dependencies = .{
+        .upstream = .{
+            .url = "git+https://github.com/rtissera/libchdr#8bba7745d758627258b315997a860039244cedaf",
+            .hash = "N-V-__8AAFHk0QADIJ2L4BjuFmIWmb5uZ0NzJavMOvQbwOXM",
+        },
+        .zstd = .{
+            .url = "git+https://github.com/allyourcodebase/zstd.git?ref=1.5.7#01327d49cbc56dc24c20a167bb0055d7fc23de84",
+            .hash = "zstd-1.5.7-KEItkJ8vAAC5_rRlKmLflYQ-eKXbAIQBWZNmmJtS18q0",
+        },
+        .zlib = .{
+            .url = "https://github.com/allyourcodebase/zlib/archive/refs/tags/1.3.1.tar.gz",
+            .hash = "zlib-1.3.1-AAAAACEMAAA0qyoSrfgBb_p25ItL4yRf_TBRk-26TYMF",
+        },
+    },
+
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+    },
+}
